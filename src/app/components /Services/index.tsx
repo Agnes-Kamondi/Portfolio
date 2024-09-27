@@ -13,7 +13,7 @@ const servicesData = [
     title: "Mobile Development",
     icon: <FaMobileAlt size={60} className="text-pink-500" />,
     shortDescription: "Bringing your ideas to life on mobile platforms with clean, scalable code.",
-    details: "I focus on creating mobile applications that are not only responsive but also offer a seamless user experience across devices. Whether it’s iOS or Android, I leverage technologies like Retrofit and Room to ensure your mobile app delivers great performance and functionality.",
+    details: "I focus on creating mobile applications that are not only responsive but also offer a seamless user experience across devices. Whether it&rsquo;s iOS or Android, I leverage technologies like Retrofit and Room to ensure your mobile app delivers great performance and functionality.",
   },
   {
     title: "Backend Development",
@@ -42,9 +42,9 @@ const servicesData = [
 ];
 
 const Services = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const toggleDetails = (index) => {
+  const toggleDetails = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index); // Toggle the clicked service
   };
 
@@ -53,8 +53,8 @@ const Services = () => {
       <div className="container mx-auto">
         {/* Section Title */}
         <div className="text-center mb-10">
-          <h2 className="text-5xl font-bold text-black-500">What Services I’m Providing</h2>
-          <p className="text-gray-600 mt-2">Click "Learn More" to discover how I can help bring your ideas to life.</p>
+          <h2 className="text-5xl font-bold text-black-500">What Services I&rsquo;m Providing</h2>
+          <p className="text-gray-600 mt-2">Click &quot;Learn More&quot; to discover how I can help bring your ideas to life.</p>
           <div className="mt-2 h-1 w-16 bg-pink-500 mx-auto"></div> {/* Pink underline */}
         </div>
 

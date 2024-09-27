@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa'; // Importing icon for external links
+import Image from 'next/image'; // Import Next.js Image component
 
 const Projects = () => {
   const projectItems = [
@@ -30,7 +31,13 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {projectItems.map((project, idx) => (
             <div key={idx} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md mb-6" />
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={600} // Set appropriate width
+                height={300} // Set appropriate height
+                className="object-cover rounded-md mb-6"
+              />
               <a
                 href={project.link}
                 target="_blank"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; 
 
 const About = () => {
   return (
@@ -17,10 +18,12 @@ const About = () => {
           {/* Image Section */}
           <div className="md:w-1/2 relative">
             <div className="absolute -inset-4 border-4 border-pink-500 rounded-lg"></div>
-            <img
+            <Image
               src="/images/laptop.webp"
               alt="About Me"
               className="relative rounded-lg shadow-lg w-full h-[630px]"
+              width={630} // Set appropriate width
+              height={630} // Set appropriate height
             />
           </div>
 
@@ -30,7 +33,7 @@ const About = () => {
               Passionate About Technology & Continuous Learning
             </h3>
             <p className="text-black-500 text-lg text-center md:text-left leading-relaxed">
-              Hi, I'm Agnes, a driven and enthusiastic entry-level Fullstack Developer with a strong passion for coding and problem-solving. 
+              Hi, I&apos;m Agnes, a driven and enthusiastic entry-level Fullstack Developer with a strong passion for coding and problem-solving. 
               Although I am just starting my journey in software development, I am dedicated to building a solid foundation through self-learning 
               and real-world projects.
             </p>
@@ -42,7 +45,7 @@ const About = () => {
             </p>
 
             <p className="text-black-500 text-lg text-center md:text-left leading-relaxed">
-              Some technologies I’m currently working with:
+              Some technologies I&apos;m currently working with:
             </p>
             <ul className="list-disc pl-5 mt-2 text-black-500 text-lg">
                 <li>React, Next.js, JavaScript</li>

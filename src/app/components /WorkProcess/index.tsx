@@ -3,16 +3,18 @@ import React, { useRef, useState } from 'react';
 import { FaPlay, FaPause } from 'react-icons/fa'; // Importing play/pause icons
 
 const WorkProcess = () => {
-  const videoRef = useRef(null); // Reference to the video element
+  const videoRef = useRef<HTMLVideoElement | null>(null); // Reference to the video element
   const [isPlaying, setIsPlaying] = useState(false); // State to track video play/pause
 
   const handlePlayPause = () => {
-    if (isPlaying) {
-      videoRef.current.pause(); // Pause the video
-      setIsPlaying(false); // Update state to show it's paused
-    } else {
-      videoRef.current.play(); // Play the video
-      setIsPlaying(true); // Update state to show it's playing
+    if (videoRef.current) { // Check if videoRef.current is not null
+      if (isPlaying) {
+        videoRef.current.pause(); // Pause the video
+        setIsPlaying(false); // Update state to show it's paused
+      } else {
+        videoRef.current.play(); // Play the video
+        setIsPlaying(true); // Update state to show it's playing
+      }
     }
   };
 
