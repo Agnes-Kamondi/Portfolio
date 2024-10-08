@@ -14,7 +14,7 @@ const Header = () => {
     <header className="bg-gray-100 pt-8 shadow-sm">
       <div className="container flex justify-between items-center relative px-12 md:px-16">
         {/* Name with curvy font */}
-        <div className="mr-8"> {/* Added margin-right */}
+        <div className="mr-8">
           <p
             className="text-[44px] text-pink-500 font-serif font-bold ml-7"
             style={{ fontFamily: "'Dancing Script', cursive" }}
@@ -38,7 +38,7 @@ const Header = () => {
             isOpen ? "block" : "hidden md:block"
           }`}
         >
-          <ul className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-10 py-4 md:py-0"> {/* Increased space-x */}
+          <ul className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-10 py-4 md:py-0">
             <li>
               <a href="#about" className="hover:text-pink-500 text-xl">
                 About
@@ -63,7 +63,7 @@ const Header = () => {
         </nav>
 
         {/* Hire Me Button */}
-        <div className="hidden md:block ml-8"> {/* Added margin-left */}
+        <div className="hidden md:block ml-8">
           <a
             href="#contact"
             className="bg-pink-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-pink-600 transition duration-300"
@@ -75,5 +75,5 @@ const Header = () => {
     </header>
   );
 };
-12
+
 export default Header;
