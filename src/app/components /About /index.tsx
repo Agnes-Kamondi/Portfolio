@@ -5,6 +5,7 @@ const About = () => {
   return (
     <section id="about" className="py-8 bg-white" style={{ fontFamily: "'Nunito', sans-serif" }}>
       <div className="container mx-auto">
+        
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold text-black-500">About Me</h2>

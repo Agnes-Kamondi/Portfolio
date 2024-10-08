@@ -1,43 +1,61 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import { FaLinkedinIn, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa'; 
 import Image from 'next/image';
 
+const jobTitles = [
+  "A Frontend Developer.",
+  "A Backend Developer.",
+  "A Product Manager.",
+  "A UI/UX Designer.",
+  "An Android Developer.",
+  "A Data Engineer.",
+  "A Machine Learning Engineer."
+];
+
 const Hero = () => {
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % jobTitles.length);
+    }, 3000); // Change title every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
-    <section className="bg-pink-50 min-h-screen flex items-center justify-between px-10 md:px-24 py-2"> {/* Reduced padding */}
+    <section className="bg-pink-50 min-h-screen flex items-center justify-between px-10 md:px-24 py-2">
       <div className="md:w-1/2 space-y-6">
         <div className="space-y-4">
           <h1 className="text-5xl font-bold text-gray-800 leading-tight">
             Hi, I&apos;m Agnes <br />
-            <span className="text-6xl text-blue-900">A Fullstack Developer.</span>
+            <span className="text-6xl text-blue-900 transition-opacity duration-500">
+              {jobTitles[currentTitleIndex]}
+            </span>
           </h1>
-          <p className="text-black-500 text-lg">
-            I specialize in building responsive web and mobile applications that are scalable and efficient. I focus on delivering quality work that exceeds expectations.
+          <p className="text-black-500 text-2xl">
+            I specialize in building responsive web and mobile applications that are scalable and efficient with a focus on delivering quality work that exceeds expectations.
           </p>
         </div>
 
         <div className="flex space-x-6 mt-6">
-          {/* Twitter Icon */}
           <a href="https://x.com/Agnes_Kamondi" className="text-gray-800 hover:text-pink-500 transition duration-300">
             <FaTwitter size={24} /> 
           </a>
-          {/* LinkedIn Icon */}
           <a href="https://www.linkedin.com/in/agnes-auma-356a4b2b1/" className="text-gray-800 hover:text-pink-500 transition duration-300">
             <FaLinkedinIn size={24} /> 
           </a>
-          {/* Gmail (Email) Icon */}
           <a href="mailto:kamondiagnesauma@gmail.com" className="text-gray-800 hover:text-pink-500 transition duration-300">
             <FaEnvelope size={24} /> 
           </a>
-          {/* GitHub Icon */}
           <a href="https://github.com/Agnes-Kamondi" className="text-gray-800 hover:text-pink-500 transition duration-300">
             <FaGithub size={24} /> 
           </a>
         </div>
-        
-        {/* Download CV Button */}
+
         <a 
-          href="/images/Agnes%20Auma%20CV.pdf"  // Ensure the correct path with escaped spaces
+          href="/images/Agnes%20Auma%20CV.pdf"
           download="Agnes_Auma_CV.pdf" 
           className="inline-block bg-pink-500 text-white px-8 py-3 rounded-full shadow-lg hover:bg-pink-600 transition duration-300"
         >
@@ -54,7 +72,6 @@ const Hero = () => {
           height={1000} 
         />
       </div>
-      
     </section>
   );
 };

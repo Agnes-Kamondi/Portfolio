@@ -48,7 +48,7 @@ const WorkProcess = () => {
           <h3 className="text-5xl font-bold text-white mb-4">Working Process</h3>
           {/* Description */}
           <p className="text-white text-lg max-w-lg mx-auto">
-            In this video, I walk you through the process of creating applications—from concept to deployment. Discover how ideas turn into scalable solutions.
+            This video is a walk you through the process of creating applications from concept to deployment. Discover how ideas turn into scalable solutions.
           </p>
         </div>
       </div>

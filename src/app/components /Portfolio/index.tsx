@@ -34,8 +34,8 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={600} // Set appropriate width
-                height={300} // Set appropriate height
+                width={600} 
+                height={300} 
                 className="object-cover rounded-md mb-6"
               />
               <a
