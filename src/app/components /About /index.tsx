@@ -4,7 +4,7 @@ import Image from 'next/image';
 const About = () => {
   return (
     <section id="about" className="py-8 bg-white" style={{ fontFamily: "'Nunito', sans-serif" }}>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         
         {/* Section Title */}
         <div className="text-center mb-12">
@@ -15,21 +15,21 @@ const About = () => {
           <div className="mt-2 h-1 w-16 bg-pink-500 mx-auto"></div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-start md:space-x-16">
+        <div className="flex flex-col md:flex-row items-center md:space-x-16">
           {/* Image Section */}
-          <div className="md:w-1/2 relative">
+          <div className="md:w-1/2 relative mb-8 md:mb-0">
             <div className="absolute -inset-4 border-4 border-pink-500 rounded-lg"></div>
             <Image
               src="/images/laptop.webp"
               alt="About Me"
-              className="relative rounded-lg shadow-lg w-full h-[630px]"
+              className="relative rounded-lg shadow-lg w-full h-auto"
               width={630} // Set appropriate width
               height={630} // Set appropriate height
             />
           </div>
 
           {/* Text Content */}
-          <div className="md:w-1/2 flex flex-col items-center md:items-start space-y-6 mt-8 md:mt-0">
+          <div className="md:w-1/2 flex flex-col items-center md:items-start space-y-6">
             <h3 className="text-3xl font-bold text-blue-900 text-center md:text-left">
               Passionate About Technology & Continuous Learning
             </h3>
