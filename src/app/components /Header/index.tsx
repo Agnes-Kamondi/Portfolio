@@ -40,22 +40,22 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-10 py-4 md:py-0">
             <li>
-              <a href="#about" className="hover:text-pink-500 text-xl">
+              <a href="#about" className="hover:text-pink-500 text-lg">
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" className="hover:text-pink-500 text-xl">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="hover:text-pink-500 text-xl">
+              <a href="#services" className="hover:text-pink-500 text-lg">
                 Services
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-pink-500 text-xl">
+              <a href="#projects" className="hover:text-pink-500 text-lg">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-pink-500 text-lg">
                 Contact
               </a>
             </li>
@@ -63,7 +63,7 @@ const Header = () => {
         </nav>
 
         {/* Hire Me Button */}
-        <div className="hidden md:block ml-8">
+        <div className="hidden lg:block ml-8">
           <a
             href="#contact"
             className="bg-pink-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-pink-600 transition duration-300"

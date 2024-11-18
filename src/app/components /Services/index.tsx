@@ -54,8 +54,8 @@ const Services = () => {
         {/* Section Title */}
         <div className="text-center mb-10">
           <h2 className="text-5xl font-bold text-black-500">What Services I&rsquo;m Providing</h2>
-          <p className="text-gray-600 mt-2">Click &quot;Learn More&quot; to discover how I can help bring your ideas to life.</p>
-          <div className="mt-2 h-1 w-16 bg-pink-500 mx-auto"></div> {/* Pink underline */}
+          <p className="text-gray-600 mt-2 text-xl">Click &quot;Learn More&quot; to discover how I can help bring your ideas to life.</p>
+          <div className="mt-2 h-1 w-16 bg-pink-500 mx-auto"></div> 
         </div>
 
         {/* Services Grid */}
@@ -68,7 +68,7 @@ const Services = () => {
               <div className="flex justify-center items-center mb-6">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold mb-4">{service.title}</h3>
+              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
               <p className="text-black-500 text-lg mb-6">
                 {expandedIndex === index ? service.details : service.shortDescription}
               </p>

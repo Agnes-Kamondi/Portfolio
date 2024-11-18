@@ -21,7 +21,7 @@ const Hero = () => {
       setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % jobTitles.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (
@@ -30,11 +30,11 @@ const Hero = () => {
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
             Hi, I&apos;m Agnes <br />
-            <span className="text-5xl md:text-6xl text-blue-900 transition-opacity duration-500">
+            <span className="text-5xl md:text-5xl text-blue-900 transition-opacity duration-500">
               {jobTitles[currentTitleIndex]}
             </span>
           </h1>
-          <p className="text-black-500 text-lg md:text-2xl">
+          <p className="text-black-500 text-lg md:text-xl">
             I specialize in building responsive web and mobile applications that are scalable and efficient with a focus on delivering quality work that exceeds expectations.
           </p>
         </div>
@@ -68,7 +68,7 @@ const Hero = () => {
         <Image 
           src="/images/Auma.jpg" 
           alt="Agnes A. Kamondi" 
-          className="rounded-2xl w-full max-w-[600px] h-auto" 
+          className="rounded-2xl w-full max-w-[400px] h-auto" 
           width={600} 
           height={600} 
         />

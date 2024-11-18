@@ -102,7 +102,7 @@ const Skills = () => {
             <div key={idx} className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 {course.icon}
-                <h3 className="text-xl font-bold ml-4 text-black-500">{course.category}</h3>
+                <h3 className="text-2xl font-bold ml-4 text-black-500">{course.category}</h3>
               </div>
               <ul className="text-black-500 mb-6 list-disc ml-8">
                 {course.topics.map((topic, index) => (
