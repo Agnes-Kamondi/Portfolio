@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { FaLaptopCode, FaMobileAlt, FaDatabase, FaCloud, FaProjectDiagram, FaPencilRuler, FaArrowRight } from 'react-icons/fa'; // Importing icons
+import { FaLaptopCode, FaMobileAlt, FaDatabase, FaCloud,  FaClipboardList, FaBrain, FaProjectDiagram, FaPencilRuler, FaArrowRight,  FaSearch ,FaCogs  } from 'react-icons/fa'; // Importing icons
 
 const servicesData = [
   {
@@ -13,7 +13,7 @@ const servicesData = [
     title: "Mobile Development",
     icon: <FaMobileAlt size={60} className="text-pink-500" />,
     shortDescription: "Bringing your ideas to life on mobile platforms with clean, scalable code.",
-    details: "I focus on creating mobile applications that are not only responsive but also offer a seamless user experience across devices. Whether it&rsquo;s iOS or Android, I leverage technologies like Retrofit and Room to ensure your mobile app delivers great performance and functionality.",
+    details: "I focus on creating mobile applications that are not only responsive but also offer a seamless user experience across devices. Whether its iOS or Android, I leverage technologies like Retrofit and Room to ensure your mobile app delivers great performance and functionality.",
   },
   {
     title: "Backend Development",
@@ -38,6 +38,30 @@ const servicesData = [
     icon: <FaPencilRuler size={60} className="text-pink-500" />,
     shortDescription: "Creating visually engaging and user-friendly designs for your digital products.",
     details: "I bring a creative approach to UX/UI design, focusing on building interfaces that are not only visually appealing but also highly usable. Using tools like Adobe Illustrator, Photoshop, and Figjam, I craft designs that resonate with users, enhancing the overall experience of your product.",
+  },
+  {
+    title: "Machine Learning",
+    icon: <FaBrain size={60} className="text-pink-500" />,
+    shortDescription: "Implementing intelligent solutions through data-driven insights.",
+    details: "I specialize in developing machine learning models that can analyze data patterns and make predictions. My approach combines statistical analysis with programming skills to create algorithms tailored to solve specific business problems effectively.",
+  },
+  {
+    title: "Product Management",
+    icon: <FaClipboardList size={60} className="text-pink-500" />,
+    shortDescription: "Guiding product development from conception to launch.",
+    details: "With expertise in agile methodologies and cross-functional team leadership, I manage the entire product lifecycle. My goal is to align product strategy with business objectives while ensuring timely delivery of high-quality products.",
+  },
+  {
+    title: "Research",
+    icon: <FaSearch size={60} className="text-pink-500" />,
+    shortDescription: "Conducting thorough research to inform strategic decisions.",
+    details: "I provide comprehensive research services aimed at understanding market trends and user needs. This includes qualitative and quantitative analysis to support data-driven decision-making processes for businesses."
+  },
+  {
+    title: "DevOps",
+    icon: <FaCogs size={60} className="text-pink-500" />,
+    shortDescription: "Streamlining development processes through automation and collaboration.",
+    details: "I implement DevOps practices to enhance collaboration between development and operations teams. My services include setting up CI/CD pipelines, automating deployments, and ensuring efficient monitoring of applications in production environments."
   },
 ];
 
