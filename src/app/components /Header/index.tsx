@@ -50,6 +50,11 @@ const Header = () => {
               </a>
             </li>
             <li>
+              <a href="#skills" className="hover:text-pink-500 text-lg">
+                Skills
+              </a>
+            </li>
+            <li>
               <a href="#projects" className="hover:text-pink-500 text-lg">
                 Portfolio
               </a>

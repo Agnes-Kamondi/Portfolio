@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { FaLaptopCode, FaMobileAlt, FaDatabase, FaCloud,  FaClipboardList, FaBrain, FaProjectDiagram, FaPencilRuler, FaArrowRight,  FaSearch ,FaCogs  } from 'react-icons/fa'; // Importing icons
+import { FaLaptopCode, FaMobileAlt, FaDatabase, FaCloud,  FaClipboardList, FaBrain, FaProjectDiagram, FaPencilRuler, FaArrowRight,  FaSearch ,FaCogs , FaShareAlt } from 'react-icons/fa'; // Importing icons
 
 const servicesData = [
   {
@@ -38,6 +38,12 @@ const servicesData = [
     icon: <FaPencilRuler size={60} className="text-pink-500" />,
     shortDescription: "Creating visually engaging and user-friendly designs for your digital products.",
     details: "I bring a creative approach to UX/UI design, focusing on building interfaces that are not only visually appealing but also highly usable. Using tools like Adobe Illustrator, Photoshop, and Figjam, I craft designs that resonate with users, enhancing the overall experience of your product.",
+  },
+  {
+  title: "Social Media Management",
+  icon: <FaShareAlt size={60} className="text-pink-500" />,
+  shortDescription: "Building engaging social media presence through strategy, content, and audience engagement.",
+  details: "I manage social media platforms by developing content strategies, creating and scheduling engaging content, monitoring performance, and building meaningful audience relationships. I use tools such as Meta Business Suite, Canva, CapCut, LinkedIn, and Google Ads to manage campaigns, analyze performance, and grow online communities."
   },
   {
     title: "Machine Learning",

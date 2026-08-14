@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Email Address */}
           <p className="text-lg text-gray-300 mb-4">kamondiagnesauma@gmail.com</p>
           {/* Footer Text */}
-          <p className="text-gray-500 text-sm">&copy; 2024 Personal Portfolio</p>
+          <p className="text-gray-500 text-sm">&copy; 2026 Personal Portfolio</p>
         </div>
       </footer>
     </>

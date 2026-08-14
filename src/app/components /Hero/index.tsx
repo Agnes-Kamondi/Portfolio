@@ -10,7 +10,8 @@ const jobTitles = [
   "A UI/UX Designer.",
   "An Android Developer.",
   "A Data Engineer.",
-  "A Machine Learning Engineer."
+  "A Machine Learning Engineer.",
+  "A Social Media Manager."
 ];
 
 const Hero = () => {
@@ -35,8 +36,9 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-black-500 text-lg md:text-xl">
-            I specialize in building responsive web and mobile applications that are scalable and efficient with a focus on delivering quality work that exceeds expectations.
-          </p>
+           I blend technology, creativity, and strategy to turn ideas into impactful
+           digital experiences, from scalable applications and user-centered products
+          to engaging digital platforms.          </p>
         </div>
 
         <div className="flex space-x-6 mt-6 justify-center md:justify-start">
@@ -53,22 +55,14 @@ const Hero = () => {
             <FaGithub size={24} /> 
           </a>
         </div>
-
-        <a 
-          href="/images/Agnes%20Auma%20CV.pdf"
-          download="Agnes_Auma_CV.pdf" 
-          className="inline-block bg-pink-500 text-white px-8 py-3 rounded-full shadow-lg hover:bg-pink-600 transition duration-300 self-center md:self-start"
-        >
-          Download CV
-        </a>
       </div>
 
       {/* Image Section */}
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
         <Image 
-          src="/images/Auma.jpg" 
+          src="/images/Agnes.jpg" 
           alt="Agnes A. Kamondi" 
-          className="rounded-2xl w-full max-w-[400px] h-auto" 
+          className="rounded-2xl w-full max-w-[400px] h-[500px] object-cover shadow-lg" 
           width={600} 
           height={600} 
         />
