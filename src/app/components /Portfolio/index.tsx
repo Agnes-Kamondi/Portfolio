@@ -40,6 +40,13 @@ const Projects = () => {
       link: 'https://github.com/Agnes-Kamondi/EnwalletApp.git',
       image: '/images/wallet.jpeg', 
     },
+    {
+      title: 'Content Creation',
+      description: 'Created engaging graphics, short-form videos, and promotional content to increase brand visibility and audience engagement.',
+      link: 'https://drive.google.com/drive/folders/1nqjlnuYd8YiUh6NbQFzTtY4LIW_u-kF4?usp=sharing',
+      image: '/images/content-creation.jpeg',
+    },
+
   ];
 
   return (
